@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.wrapper{
+  background-image: url("blue-enogu.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.body{
+
+}
+
+.container{
+  height:   1000px;
+  text-align:center;
+  margin-top: 250px;
+}
+
+
+
+.container p{
+  font-family: Orator Std;
+  font-size:50px;
+  margin-top:80px;
+  margin-bottom:5px;
+  color: #4B4B4B;
+}
+
+
+p.name span{
+ display:block;
+ font-family: Orator Std;
+ font-size:45px;
+ margin-top: -10px;
+ margin-bottom:5px;
+}
+
+.first {
+  margin-top: 5px;
+}
+
+.last{
+  margin-top: 0px;
+}
+
+.sns-icon{
+ display: inline-block;
+ margin-top:90px;
+ text-align: center;
+
+}
+
+.T,.I,.F{
+  margin:8px;
+}
