@@ -5,57 +5,78 @@
   padding: 0px;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
 
 .wrapper{
   background-image: url("images/blue-enogu.jpg");
   background-size: cover;
   height: 100%;
+  position: relative;
 }
 
-.body{
+/* 中央寄せは position: absolute; を使う。詳しくは検索 */
 
+.container {
+  text-align: center;
+  width: 250px;
+  height: 480px;
+
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
-.container{
-  height:   1000px;
-  text-align:center;
-  margin-top: 250px;
+.container .photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  /* 画像自体を丸く切らなくても、border-radiusで角の半径を指定すると丸くなる*/
 }
 
-
-
-.container p{
+/* pになってたけど、結局nameクラスだけなので明示的にnameクラスを指した方がいい */
+.container .name {
   font-family: Orator Std;
-  font-size:50px;
-  margin-top:80px;
-  margin-bottom:5px;
+  margin-top:40px;
   color: #4B4B4B;
 }
 
-
-p.name span{
- display:block;
- font-family: Orator Std;
- font-size:45px;
- margin-top: -10px;
- margin-bottom:5px;
-}
-
-.first {
-  margin-top: 5px;
-}
-
-.last{
-  margin-top: 0px;
+.container .name span{
+  display: block;
+  font-family: Orator Std;
+  font-size: 45px;
+  line-height: 50px;
 }
 
 .sns-icon{
- display: inline-block;
- margin-top:90px;
- text-align: center;
-
+  display: block;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.T,.I,.F{
-  margin:8px;
+.sns-icon a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.sns-icon a:last-child {
+  margin-right: 0;
+}
+
+.sns-icon a img {
+  width: 48px;
+  height; 32px;
 }

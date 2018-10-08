@@ -10,9 +10,10 @@
   <div class="wrapper">
 
    <div class="container">
-    <div class="photo">
-     <img src="images/furano.png" width="250px">
-    </div>
+
+    <!-- divの中にimgが入ってるけど、どちらもブロック要素なのでこのシチュエーションだとdivは無駄-->
+    <!-- imgにphotoクラスを当てて、widthはCSSに移動させよう-->
+    <img class="photo" src="images/furano.png" width="250px">
 
     <p class="name">
      <span class="last">OKAWARA</span>
@@ -20,9 +21,18 @@
     </p>
 
    <div class="sns-icon">
-     <a href="https://twitter.com/cherry_bon_ai"><img src="images/twitter-icon.png" width="48px" alt="twitter" class="T"></a>
-     <a href="https://www.instagram.com/cherry_bon.ai/"><img src="images/instagram-icon.png" width="48px" alt="instagram" class="I"></a>
-     <a href="https://www.facebook.com/profile.php?id=100010266481190"><img src="images/facebook-icon.png" width="48px" alt="facebook" class="F"></a>
+
+     <!-- クラス名は誰がみてもわかるものにすること -->
+     <!-- この場合はクラスはa要素につけた方がいいけど、CSSではそもそも使わないだろうな -->
+     <a href="https://twitter.com/cherry_bon_ai" class="twitter-icon">
+       <img src="images/twitter-icon.png" width="48px" alt="twitter">
+     </a>
+     <a href="https://www.instagram.com/cherry_bon.ai/" class="instagram-icon">
+       <img src="images/instagram-icon.png" width="48px" alt="instagram">
+     </a>
+     <a href="https://www.facebook.com/profile.php?id=100010266481190" class="facebook-icon">
+       <img src="images/facebook-icon.png" width="48px" alt="facebook">
+     </a>
    </div>
   </div>
 
